@@ -1,0 +1,136 @@
+.section-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $secondary-bg-color;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-team__container {
+  @extend %container;
+}
+
+.section-team__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  color: $title-text-color;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.section-team__list {
+  @extend %list;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.section-team__item {
+  background-color: $primary-bg-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  overflow: hidden;
+
+  @media screen and (max-width: $tablet - 1px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.section-team__img {
+  margin-bottom: 30px;
+}
+
+.section-team__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.section-team__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.social-list {
+  display: flex;
+  @extend %list;
+  margin-bottom: 24px;
+
+  justify-content: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  @extend %centered;
+  width: 44px;
+  height: 44px;
+
+  background-color: transparent;
+  border-radius: 50%;
+
+  transition: background-color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-list__icon {
+  fill: $icon-color;
+
+  transition: fill $duration $timing-function;
+
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: $primary-bg-color;
+  }
+}

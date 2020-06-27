@@ -1,0 +1,280 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: $tablet - 1px) {
+    position: relative;
+  }
+}
+
+.page-header__container {
+  @extend %container;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: $tablet - 1px) {
+    justify-content: space-between;
+  }
+}
+
+.page-header__logo {
+  @media screen and (min-width: $tablet) {
+    margin-right: 81px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 85px;
+  }
+}
+
+.page-header__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page-header__icon-cross {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  transition: opacity $duration $timing-function,
+    fill $duration $timing-function, visibility $duration $timing-function;
+
+  .page-header__button.is-open & {
+    fill: $title-text-color;
+
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+}
+
+.page-header__icon-menu {
+  fill: $title-text-color;
+
+  transition: opacity $duration $timing-function,
+    fill $duration $timing-function, visibility $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  .page-header__button.is-open & {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.page-header__menu {
+  @media screen and (max-width: $tablet - 1px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+
+    width: 100%;
+    padding: 60px 0;
+
+    text-align: center;
+
+    background-color: $primary-bg-color;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: opacity $duration $timing-function,
+      visibility $duration $timing-function;
+
+    &.is-open {
+      opacity: 1;
+      pointer-events: initial;
+      visibility: visible;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-header__nav {
+  @media screen and (max-width: $tablet - 1px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 305px;
+  }
+}
+
+.page-header__list {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  @extend %list;
+
+  @media screen and (max-width: $tablet - 1px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    line-height: 1.14;
+  }
+}
+
+.page-header__item {
+  @media screen and (max-width: $tablet - 1px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.page-header__link {
+  position: relative;
+
+  padding: 8px 0;
+
+  color: $title-text-color;
+  @extend %link;
+
+  transition: color $duration $timing-function;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+
+    background-color: transparent;
+
+    border-radius: 2px;
+
+    transition: background-color $duration $timing-function;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    &::after,
+    &::after {
+      background-color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    padding: 32px 0;
+  }
+}
+
+.page-header__link--current {
+  color: $accent-color;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+
+    background-color: $accent-color;
+
+    border-radius: 2px;
+  }
+}
+
+.contacts {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  @extend %link;
+
+  transition: color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (max-width: $tablet - 1px) {
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.contacts__icon {
+  padding: 0;
+  margin-right: 10px;
+
+  fill: currentColor;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 8px;
+  }
+}

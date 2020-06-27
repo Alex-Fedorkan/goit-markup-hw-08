@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <title>Web Studio</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container">
+        <a class="logo page-header__logo" href="./index.html"
+          >Web <span class="logo__word">Studio</span></a
+        >
+        <button
+          class="page-header__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="page-header__menu"
+          data-menu-button
+        >
+          <svg
+            class=""
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="page-header__icon-cross"
+              href="./images/sprite.svg#icon-cross"
+            ></use>
+            <use
+              class="page-header__icon-menu"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="page-header__menu" id="page-header__menu" data-menu>
+          <nav class="page-header__nav">
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a class="page-header__link" href="./index.html">Студия</a>
+              </li>
+              <li class="page-header__item">
+                <a
+                  class="page-header__link page-header__link--current"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts">
+            <a
+              class="contacts__link"
+              href="mailto:info@devstudio.com"
+              aria-label="Написать письмо"
+            >
+              <svg class="contacts__icon" width="16" height="16">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a
+              class="contacts__link"
+              href="tel:+380991111111"
+              aria-label="Позвонить"
+            >
+              <svg class="contacts__icon" width="16" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 099 111 11 11
+            </a>
+          </address>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-portfolio">
+        <div class="section-portfolio__container">
+          <h1 class="section-portfolio__title--visually-hidden">Портфолио</h1>
+          <div class="section-portfolio__row">
+            <button class="section-portfolio__btn" type="button">Все</button>
+            <button class="section-portfolio__btn" type="button">
+              Веб-сайты
+            </button>
+            <button class="section-portfolio__btn" type="button">
+              Приложения
+            </button>
+            <button class="section-portfolio__btn" type="button">Дизайн</button>
+            <button class="section-portfolio__btn" type="button">
+              Маркетинг
+            </button>
+          </div>
+          <ul class="section-portfolio__list">
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    srcset="
+                      ./images/techcrack/techcrack-370.jpg 370w,
+                      ./images/techcrack/techcrack-354.jpg 354w,
+                      ./images/techcrack/techcrack-450.jpg 450w,
+                      ./images/techcrack/techcrack-740.jpg 740w,
+                      ./images/techcrack/techcrack-708.jpg 708w,
+                      ./images/techcrack/techcrack-900.jpg 900w
+                    "
+                    src="./images/techcrack/techcrack-450.jpg"
+                    alt="Ноутбук с открытой веб страницей"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <p class="link-card__desc">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Технокряк</h2>
+                  <p class="link-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    srcset="
+                      ./images/poster-nba/poster-nba-370.jpg 370w,
+                      ./images/poster-nba/poster-nba-354.jpg 354w,
+                      ./images/poster-nba/poster-nba-450.jpg 450w,
+                      ./images/poster-nba/poster-nba-740.jpg 740w,
+                      ./images/poster-nba/poster-nba-708.jpg 708w,
+                      ./images/poster-nba/poster-nba-900.jpg 900w
+                    "
+                    src="./images/poster-nba/poster-nba-450.jpg"
+                    alt="Два баскедболиста с мячом"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="link-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    srcset="
+                      ./images/seafood/seafood-370.jpg 370w,
+                      ./images/seafood/seafood-354.jpg 354w,
+                      ./images/seafood/seafood-450.jpg 450w,
+                      ./images/seafood/seafood-740.jpg 740w,
+                      ./images/seafood/seafood-708.jpg 708w,
+                      ./images/seafood/seafood-900.jpg 900w
+                    "
+                    src="./images/seafood/seafood-450.jpg"
+                    alt="Название ресторана на фоне рыбы"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Ресторан Seafood</h2>
+                  <p class="link-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    srcset="
+                      ./images/prime/prime-370.jpg 370w,
+                      ./images/prime/prime-354.jpg 354w,
+                      ./images/prime/prime-450.jpg 450w,
+                      ./images/prime/prime-740.jpg 740w,
+                      ./images/prime/prime-708.jpg 708w,
+                      ./images/prime/prime-900.jpg 900w
+                    "
+                    src="./images/prime/prime-450.jpg"
+                    alt="Наушники"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Проект Prime</h2>
+                  <p class="link-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    srcset="
+                      ./images/boxes/boxes-370.jpg 370w,
+                      ./images/boxes/boxes-354.jpg 354w,
+                      ./images/boxes/boxes-450.jpg 450w,
+                      ./images/boxes/boxes-740.jpg 740w,
+                      ./images/boxes/boxes-708.jpg 708w,
+                      ./images/boxes/boxes-900.jpg 900w
+                    "
+                    src="./images/boxes/boxes-450.jpg"
+                    alt="Две коробки"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Проект Boxes</h2>
+                  <p class="link-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    srcset="
+                      ./images/monitor/monitor-370.jpg 370w,
+                      ./images/monitor/monitor-354.jpg 354w,
+                      ./images/monitor/monitor-450.jpg 450w,
+                      ./images/monitor/monitor-740.jpg 740w,
+                      ./images/monitor/monitor-708.jpg 708w,
+                      ./images/monitor/monitor-900.jpg 900w
+                    "
+                    src="./images/monitor/monitor-450.jpg"
+                    alt="Монитор"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Inspiration has no Borders</h2>
+                  <p class="link-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    srcset="
+                      ./images/limited-edition/limited-edition-370.jpg 370w,
+                      ./images/limited-edition/limited-edition-354.jpg 354w,
+                      ./images/limited-edition/limited-edition-450.jpg 450w,
+                      ./images/limited-edition/limited-edition-740.jpg 740w,
+                      ./images/limited-edition/limited-edition-708.jpg 708w,
+                      ./images/limited-edition/limited-edition-900.jpg 900w
+                    "
+                    src="./images/limited-edition/limited-edition-450.jpg"
+                    alt="Журнальный разворот"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Издание Limited Edition</h2>
+                  <p class="link-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    srcset="
+                      ./images/lab/lab-370.jpg 370w,
+                      ./images/lab/lab-354.jpg 354w,
+                      ./images/lab/lab-450.jpg 450w,
+                      ./images/lab/lab-740.jpg 740w,
+                      ./images/lab/lab-708.jpg 708w,
+                      ./images/lab/lab-900.jpg 900w
+                    "
+                    src="./images/lab/lab-450.jpg"
+                    alt="Надпись на медальйоне"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Проект LAB</h2>
+                  <p class="link-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    srcset="
+                      ./images/notebook/notebook-370.jpg 370w,
+                      ./images/notebook/notebook-354.jpg 354w,
+                      ./images/notebook/notebook-450.jpg 450w,
+                      ./images/notebook/notebook-740.jpg 740w,
+                      ./images/notebook/notebook-708.jpg 708w,
+                      ./images/notebook/notebook-900.jpg 900w
+                    "
+                    src="./images/notebook/notebook-450.jpg"
+                    alt="Открытый ноутбук"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Growing Business</h2>
+                  <p class="link-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__boxes">
+          <a class="logo page-footer__logo" href="./index.html"
+            >Web <span class="logo__word logo__word--inverse">Studio</span></a
+          >
+          <address class="address">
+            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="address__link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="address__link" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </address>
+        </div>
+        <div class="page-footer__boxes">
+          <p class="page-footer__text">присоединяйтесь</p>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a
+                class="page-footer__link"
+                href="https://www.instagram.com/"
+                aria-label="Ссылка на Instagram"
+              >
+                <svg class="page-footer__icon-social" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a
+                class="page-footer__link"
+                href="https://twitter.com/"
+                aria-label="Ссылка на Twitter"
+              >
+                <svg class="page-footer__icon-social" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a
+                class="page-footer__link"
+                href="https://facebook.com/"
+                aria-label="Ссылка на Facebook"
+              >
+                <svg class="page-footer__icon-social" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a
+                class="page-footer__link"
+                href="https://www.linkedin.com/"
+                aria-label="Ссылка на LinkedIn"
+              >
+                <svg class="page-footer__icon-social" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form>
+          <label class="form-subscribe__text" for="form-mail"
+            >Подпишитесь на рассылку</label
+          >
+          <input
+            class="form-subscribe__input"
+            id="form-mail"
+            name="subscribe-email"
+            type="email"
+            placeholder="E-mail"
+          />
+          <button class="form-subscribe__btn" type="submit">
+            Подписаться
+            <svg class="form-subscribe__icon-send" width="24" height="24">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

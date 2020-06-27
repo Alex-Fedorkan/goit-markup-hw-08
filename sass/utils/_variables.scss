@@ -1,0 +1,35 @@
+// цвет отсновного текста #212121
+// вторичный цвет текста #757575
+// акцент #2196f3
+// вторичный цвет текст #FFFFFF
+// основной цвет фона #ffffff
+// дополнительный цвет фона #F5F4FA
+// цвет фона для накладывания rgba(47, 48, 58, 0.8)
+// цвет фона футера #2F303A
+// цвет текста в футере rgba(255, 255, 255, 0.6)
+// цвет подписи rgba(255, 255, 255, 0.4)
+
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$secondary-text-color: #ffffff;
+$accent-color: #2196f3;
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #f5f4fa;
+$additional-bg-color: rgba(47, 48, 58, 0.8);
+$footer-text-color: rgba(255, 255, 255, 0.6);
+$footer-bg-color: #2f303a;
+$sign-text-color: rgba(255, 255, 255, 0.4);
+$icon-color: #afb1b8;
+$modal-bcg: rgba(0, 0, 0, 0.2);
+
+$primary-font: Roboto, sans-serif;
+$logo-font: 'Raleway', sans-serif;
+
+$duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+:root {
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+}
